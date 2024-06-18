@@ -46,7 +46,7 @@ class ReflectionClosure extends ReflectionFunction
     /**
      * @return bool
      */
-    public function isStatic()
+    public function isStatic(): bool
     {
         if ($this->isStaticClosure === null) {
             $this->isStaticClosure = strtolower(substr($this->getCode(), 0, 6)) === 'static';
@@ -55,7 +55,10 @@ class ReflectionClosure extends ReflectionFunction
         return $this->isStaticClosure;
     }
 
-    public function isShortClosure()
+    /**
+     * @return bool
+     */
+    public function isShortClosure(): bool
     {
         if ($this->isShortClosure === null) {
             $code = $this->getCode();
