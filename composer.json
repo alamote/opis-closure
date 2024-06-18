@@ -4,6 +4,7 @@
     "keywords": ["closure", "serialization", "function", "serializable", "serialize", "anonymous functions"],
     "homepage": "https://opis.io/closure",
     "license": "MIT",
+    "version": "3.6.1",
     "authors": [
         {
             "name": "Marius Sarca",
